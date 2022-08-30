@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of life</title>
+    <style>
+      button {
+        border-width: 1px;
+        border-bottom-width: 2px;
+        border-radius: 5px;
+        color: black;
+      }
+      .pausebutton {
+        background-color: #4caf50;
+      }
+      .clearbutton {
+        background-color: rgb(156, 156, 156);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Conways game of life</h1>
+    <button class="pausebutton" type="button" onclick="updatePause()">
+      Pause
+    </button>
+    <button class="clearbutton" type="button" onclick="clearArray()">
+      Clear
+    </button>
+    <h2 id="fps">FPS: 5</h2>
+    <canvas id="screen" style="background-color: #000000" width="1800" height="900">You must use a browser that supports HTML5 Canvas for this website to
+      work</canvas>
+    <script src="game_of_life.js"></script>
+  
+
+</body></html>
